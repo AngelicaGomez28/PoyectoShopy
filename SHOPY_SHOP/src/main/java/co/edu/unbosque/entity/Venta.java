@@ -17,7 +17,7 @@ public class Venta implements Serializable {
 	@Id
 	@GeneratedValue(strategy= GenerationType.IDENTITY)
 	@Column( name= "id", nullable=false)
-	private int id;
+	private Long id;
 
 	private byte estado;
 
@@ -40,11 +40,11 @@ public class Venta implements Serializable {
 	public Venta() {
 	}
 
-	public int getId() {
+	public Long getId() {
 		return this.id;
 	}
 
-	public void setId(int id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 

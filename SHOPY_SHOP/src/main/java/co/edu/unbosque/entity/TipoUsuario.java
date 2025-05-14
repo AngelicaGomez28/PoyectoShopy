@@ -20,7 +20,7 @@ public class TipoUsuario implements Serializable {
 	@Id
 	@GeneratedValue(strategy= GenerationType.IDENTITY)
 	@Column( name= "id", nullable=false)
-	private short id;
+	private Long id;
 
 	public TipoUsuario() {
 	}
@@ -41,11 +41,11 @@ public class TipoUsuario implements Serializable {
 		this.estado = estado;
 	}
 
-	public short getId() {
+	public Long getId() {
 		return this.id;
 	}
 
-	public void setId(short id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
